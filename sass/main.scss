@@ -1,3 +1,20 @@
+@import url('https://rsms.me/inter/inter.css');
+
+html, body {
+    height: 100%;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
 .wrapper {
     background-color: #ccc;
     max-width: 1200px;
