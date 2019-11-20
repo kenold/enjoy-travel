@@ -50,7 +50,7 @@ $gap: 50px;
     font-size: 2.125rem;
     font-weight: bold;
     line-height: 1.2;
-    max-width: 50%;
+    max-width: 60%;
     z-index: 2;
 }
 .search__container {
@@ -152,19 +152,20 @@ $gap: 50px;
         grid-template-columns: repeat(3, 1fr);
     }
     &__item {
-        padding: 1.5rem;
+        padding: 1.5rem 3rem 1.5rem;
         &:not(:last-child) {
             border-right: 1px solid $light-color;
         }
     }
     &__title {
-        @include font-size(15);
+        @include font-size(13);
+        line-height: 1.5;
         margin-bottom: .75rem;
     }
     &__excerpt {
         color: rgba(0, 0, 0, .6);
-        @include font-size(14);
-        line-height: 1.2;
+        @include font-size(12);
+        line-height: 1.5;
     }
     &__footer {
         margin-top: 1rem;
