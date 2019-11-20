@@ -93,8 +93,9 @@ img {
     font-size: 0.75rem; }
 
 .tour__price::after {
-  color: #ededed;
+  color: rgba(0, 0, 0, 0.4);
   font-family: "Font Awesome 5 Free";
+  font-size: 0.625rem;
   content: "\f007";
   font-weight: 900;
   margin-left: 5px; }

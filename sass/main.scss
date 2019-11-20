@@ -108,8 +108,9 @@ $gap: 50px;
     }
     &__price {
         &::after {
-            color: $light-color;
+            color: rgba(0, 0, 0, .4);
             font-family: "Font Awesome 5 Free";
+            @include font-size(10);
             content: "\f007";
             font-weight: 900;
             margin-left: 5px;
