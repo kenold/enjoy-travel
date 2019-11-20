@@ -45,6 +45,11 @@ img {
   grid-row: 3 / 4;
   padding: 2rem 0;
   z-index: 2; }
+  .search__container .form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .search__container .form__location {
+      grid-column: 1 / -1; }
 
 .main__left {
   background-color: #fff;
