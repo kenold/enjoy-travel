@@ -166,11 +166,13 @@ $gap: 50px;
     }
     &__excerpt {
         color: rgba(0, 0, 0, .6);
+        flex-grow: auto;
         @include font-size(12);
         line-height: 1.5;
+        margin-bottom: 1rem;
     }
     &__footer {
-        margin-top: 1rem;
+        margin-top: auto;
         > * span {
             color: #1bb8fb;
             @include font-size(12);
