@@ -152,6 +152,8 @@ $gap: 50px;
         grid-template-columns: repeat(3, 1fr);
     }
     &__item {
+        display: flex;
+        flex-direction: column;
         padding: 1.5rem 3rem 1.5rem;
         &:not(:last-child) {
             border-right: 1px solid $light-color;

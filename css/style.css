@@ -127,6 +127,8 @@ img {
   grid-template-columns: repeat(3, 1fr); }
 
 .tour__item {
+  display: flex;
+  flex-direction: column;
   padding: 1.5rem 3rem 1.5rem; }
   .tour__item:not(:last-child) {
     border-right: 1px solid #ededed; }
