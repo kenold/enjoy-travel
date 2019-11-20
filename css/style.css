@@ -55,6 +55,7 @@ img {
       width: 100%; }
     .search__container .form__group {
       display: flex;
+      align-items: center;
       border: 1px solid #ededed;
       padding: .75rem; }
       .search__container .form__group--location {
