@@ -20,7 +20,7 @@ img {
 
 .grid {
   display: grid;
-  grid-template-columns: 80px 1fr 50px 50px 1fr 80px;
+  grid-template-columns: 60px 0.5fr 50px 50px 1fr 60px;
   grid-template-rows: 100px auto auto auto auto 50px; }
 
 .main__header {
@@ -51,7 +51,7 @@ img {
   font-size: 2.125rem;
   font-weight: bold;
   line-height: 1.2;
-  max-width: 60%;
+  max-width: 80%;
   z-index: 2; }
 
 .search__container {
@@ -143,7 +143,7 @@ img {
 .tour__item {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem 3rem 1.5rem; }
+  padding: 1.5rem 2rem 1.5rem; }
   .tour__item:not(:last-child) {
     border-right: 1px solid #ededed; }
 
