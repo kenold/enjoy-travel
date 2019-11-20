@@ -63,6 +63,12 @@ img {
       font-size: 0.75rem;
       color: rgba(0, 0, 0, 0.4);
       margin-right: 0.5rem; }
+    .search__container .form__btn {
+      background-color: #ffa200;
+      border: none;
+      color: #fff; }
+      .search__container .form__btn i {
+        transform: scaleX(-1); }
 
 .main__left {
   background-color: #fff;
