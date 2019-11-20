@@ -47,9 +47,22 @@ img {
   z-index: 2; }
   .search__container .form {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); }
-    .search__container .form__location {
-      grid-column: 1 / -1; }
+    grid-template-columns: 1fr 1fr 50px;
+    grid-template-rows: repeat(2, fr);
+    gap: .5rem 0; }
+    .search__container .form input {
+      border: none;
+      width: 100%; }
+    .search__container .form__group {
+      display: flex;
+      border: 1px solid #ededed;
+      padding: .75rem; }
+      .search__container .form__group--location {
+        grid-column: 1 / -1; }
+    .search__container .form__icon {
+      font-size: 0.75rem;
+      color: rgba(0, 0, 0, 0.4);
+      margin-right: 0.5rem; }
 
 .main__left {
   background-color: #fff;

@@ -58,9 +58,25 @@ $gap: 50px;
     z-index: 2;
     .form {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        &__location {
-            grid-column: 1 / -1;
+        grid-template-columns: 1fr 1fr 50px;
+        grid-template-rows: repeat(2, fr);
+        gap: .5rem 0;
+        input {
+            border: none;
+            width: 100%;
+        }
+        &__group {
+            display: flex;
+            border: 1px solid $light-color;
+            padding: .75rem;
+            &--location {
+                grid-column: 1 / -1;
+            }
+        }
+        &__icon {
+            @include font-size(12);
+            color: rgba(0, 0, 0, .4);
+            margin-right: 0.5rem;
         }
     }
 }
