@@ -3,7 +3,7 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
   margin: 0; }
 
 a {
@@ -53,6 +53,12 @@ img {
     .search__container .form input {
       border: none;
       width: 100%; }
+      .search__container .form input::placeholder {
+        color: rgba(0, 0, 0, 0.7);
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 0.75rem;
+        font-weight: bold;
+        opacity: 1; }
     .search__container .form__group {
       display: flex;
       align-items: center;
@@ -67,7 +73,8 @@ img {
     .search__container .form__btn {
       background-color: #ffa200;
       border: none;
-      color: #fff; }
+      color: #fff;
+      cursor: pointer; }
       .search__container .form__btn i {
         transform: scaleX(-1); }
 
