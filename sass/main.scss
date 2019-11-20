@@ -16,15 +16,16 @@ img {
   width: 100%;
 }
 .wrapper {
-    background-color: #ccc;
+    background-color: #eee;
     max-width: 1200px;
     margin: 0 auto;
     padding: 5rem;
 }
+$side-gap: 80px;
 $gap: 50px;
 .grid {
     display: grid;
-    grid-template-columns: $gap 1fr $gap $gap 1fr $gap;
+    grid-template-columns: $side-gap 1fr $gap $gap 1fr $side-gap;
     grid-template-rows: 100px auto auto 50px 50px 50px;
 }
 .main__header {
@@ -38,8 +39,10 @@ $gap: 50px;
 .slogan {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    font-size: 1.75rem;
+    font-size: 2.125rem;
     font-weight: bold;
+    line-height: 1.2;
+    max-width: 50%;
     z-index: 2;
 }
 .search {
@@ -55,7 +58,7 @@ $gap: 50px;
     z-index: 1;
 }
 .main__right {
-    background-color: #7847ce;
+    background: url("../images/jump.jpg") center no-repeat;
     grid-column: 4 / 7;
     grid-row: 1 / 7;
     z-index: 1;
@@ -65,11 +68,20 @@ $gap: 50px;
     grid-column: 1 / 4;
     grid-row: 5 / 7;
 }
-.tours {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    grid-column: 2 / 6;
-    grid-row: 4 / 6;
-    padding: 1rem;
-    z-index: 1;
+.tour {
+    &__list {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        grid-column: 2 / 6;
+        grid-row: 4 / 6;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__item {
+        padding: 1rem;
+        &:not(:last-child) {
+            border-right: 1px solid #ccc;
+        }
+    }
 }
