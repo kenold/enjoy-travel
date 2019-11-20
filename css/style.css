@@ -87,8 +87,14 @@ img {
   line-height: 1.2; }
 
 .tour__footer {
-  font-weight: bold;
   margin-top: 1rem; }
   .tour__footer > * span {
     color: #1bb8fb;
     font-size: 0.75rem; }
+
+.tour__price::after {
+  color: #ededed;
+  font-family: "Font Awesome 5 Free";
+  content: "\f007";
+  font-weight: 900;
+  margin-left: 5px; }
