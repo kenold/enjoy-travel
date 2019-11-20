@@ -19,9 +19,18 @@
 			<h1 class="slogan">Your next adventure starts now.</h1>
 			<div class="search__container">
 				<form class="form">
-					<input type="text" name="location" class="form__location" placeholder="Where do you want to do?">
-					<input type="date" name="depart" class="form__depart" placeholder="Depart">
-					<input type="date" name="return" class="form__return" placeholder="Return">
+					<div class="form__group form__group--location">
+						<div class="form__icon"><i class="fas fa-map-marker-alt"></i></div>
+						<input type="text" name="location" class="form__location" placeholder="Where do you want to do?">
+					</div>
+					<div class="form__group form__group--depart">
+						<div class="form__icon"><i class="far fa-calendar-alt"></i></div>
+						<input type="date" name="depart" class="form__depart" placeholder="Depart">
+					</div>
+					<div class="form__group form__group--return">
+						<div class="form__icon"><i class="far fa-calendar-alt"></i></div>
+						<input type="date" name="return" class="form__return" placeholder="Return">
+					</div>
 					<input type="button" value="" class="form__btn">
 				</form>
 			</div>
