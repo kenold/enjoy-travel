@@ -21,7 +21,7 @@ img {
 .grid {
   display: grid;
   grid-template-columns: 80px 1fr 50px 50px 1fr 80px;
-  grid-template-rows: 100px auto auto 50px 50px 50px; }
+  grid-template-rows: 100px auto auto auto auto 50px; }
 
 .main__header {
   grid-column: 2 / 6;
@@ -76,3 +76,9 @@ img {
   padding: 1rem; }
   .tour__item:not(:last-child) {
     border-right: 1px solid #ccc; }
+
+.tour__title {
+  margin-bottom: 1rem; }
+
+.tour__footer {
+  margin-top: 1rem; }
