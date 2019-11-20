@@ -146,7 +146,7 @@ img {
   padding: 1.5rem 2rem 1.5rem; }
   .tour__item:not(:last-child) {
     border-right: 1px solid #ededed;
-    box-shadow: 2px 1px 11px 1px rgba(0, 0, 0, 0.18); }
+    box-shadow: 2px 1px 8px 1px rgba(0, 0, 0, 0.1); }
 
 .tour__title {
   font-size: 0.8125rem;

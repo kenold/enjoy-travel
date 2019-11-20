@@ -173,7 +173,7 @@ $gap: 50px;
         padding: 1.5rem 2rem 1.5rem;
         &:not(:last-child) {
             border-right: 1px solid $light-color;
-            box-shadow: 2px 1px 11px 1px rgba(0,0,0,0.18);
+            box-shadow: 2px 1px 8px 1px rgba(0,0,0,0.10);
         }
     }
     &__title {
