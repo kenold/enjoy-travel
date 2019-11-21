@@ -219,7 +219,7 @@ img {
     .tour__item:hover {
       border: 1px solid var(--light-color);
       box-shadow: none;
-      transform: scale(1.1); }
+      transform: scale(1.05); }
   .tour__title {
     width: 80%; }
   .bar {
