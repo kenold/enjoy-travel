@@ -6,6 +6,10 @@ body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
   margin: 0; }
 
+a {
+  color: #000;
+  text-decoration: none; }
+
 img {
   width: 100%; }
 
@@ -114,13 +118,14 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
 
-.tour__item {
+.tour__item:not(:last-child) {
+  border-right: 1px solid #ededed;
+  box-shadow: 2px 1px 8px 1px rgba(0, 0, 0, 0.1); }
+
+.tour__link {
   display: flex;
   flex-direction: column;
   padding: 1.5rem 2rem 1.5rem; }
-  .tour__item:not(:last-child) {
-    border-right: 1px solid #ededed;
-    box-shadow: 2px 1px 8px 1px rgba(0, 0, 0, 0.1); }
 
 .tour__title {
   font-size: 0.8125rem;

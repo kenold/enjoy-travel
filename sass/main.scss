@@ -16,7 +16,10 @@ body {
   font-family: $ss-font;
   margin: 0;
 }
-
+a {
+    color: #000;
+    text-decoration: none;
+}
 img {
   width: 100%;
 }
@@ -133,21 +136,21 @@ $gap: 50px;
         }
     }
 }
+.tour__list {
+    background-color: #fff;
+    border: 1px solid $light-color;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 .tour {
-    &__list {
-        background-color: #fff;
-        border: 1px solid $light-color;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+    &__item:not(:last-child) {
+        border-right: 1px solid $light-color;
+        box-shadow: 2px 1px 8px 1px rgba(0,0,0,0.10);
     }
-    &__item {
+    &__link {
         display: flex;
         flex-direction: column;
         padding: 1.5rem 2rem 1.5rem;
-        &:not(:last-child) {
-            border-right: 1px solid $light-color;
-            box-shadow: 2px 1px 8px 1px rgba(0,0,0,0.10);
-        }
     }
     &__title {
         @include font-size(13);
@@ -213,21 +216,17 @@ $gap: 50px;
         grid-row: 3 / 4;
         z-index: 1;
     }
-    .photo {
-        &-content {
+    .photo-content {
             grid-column: 5 / 6;
             grid-row: 3 / 4;
             z-index: 1;
-        }
     }
-    .tour {
-        &__list {
-            background-color: #fff;
-            border: 1px solid $light-color;
-            grid-column: 2 / 6;
-            grid-row: 4 / 6;
-            z-index: 1;
-        }
+    .tour__list {
+        background-color: #fff;
+        border: 1px solid $light-color;
+        grid-column: 2 / 6;
+        grid-row: 4 / 6;
+        z-index: 1;
     }
     .bar {
         grid-column: 1 / 4;
