@@ -37,7 +37,7 @@ $gap: 50px;
     z-index: 2;
     display: flex;
     justify-content: space-between;
-    padding: 2rem 2rem 0 0;
+    padding: 2rem 0;
 }
 .main-nav__list {
     display: flex;
@@ -50,7 +50,8 @@ $gap: 50px;
     color: #000;
     display: block;
     @include font-size(13);
-    padding: .5em .5em;
+    margin: .5rem 0 .5rem 1rem;
+    padding-bottom: .5rem;
     text-decoration: none;
     &:hover {
         color: #444;

@@ -24,7 +24,7 @@ img {
   z-index: 2;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 2rem 0 0; }
+  padding: 2rem 0; }
 
 .main-nav__list {
   display: flex;
@@ -37,7 +37,8 @@ img {
   color: #000;
   display: block;
   font-size: 0.8125rem;
-  padding: .5em .5em;
+  margin: .5rem 0 .5rem 1rem;
+  padding-bottom: .5rem;
   text-decoration: none; }
   .main-nav__item a:hover {
     color: #444;
