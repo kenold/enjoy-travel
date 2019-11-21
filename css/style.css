@@ -150,7 +150,7 @@ img {
 .bar {
   background-color: var(--bar-color); }
 
-@media (min-width: 40rem) {
+@media (min-width: 60rem) {
   .wrapper {
     background-color: var(--box-color);
     max-width: 980px;
