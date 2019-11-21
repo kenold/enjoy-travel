@@ -112,7 +112,7 @@ $gap: 50px;
             color: rgba(0, 0, 0, .4);
             margin-right: 0.5rem;
         }
-        &__btn {
+        &__btn--orange {
             background-color: var(--btn-color);
             border: none;
             color: #fff;
@@ -177,7 +177,9 @@ $gap: 50px;
     }
 }
 .bar {
-    background-color: var(--bar-color);
+    &--blue {
+        background-color: var(--bar-color);
+    }
 }
 .main__footer {
     color: #444;

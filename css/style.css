@@ -93,15 +93,15 @@ img {
       font-size: 0.75rem;
       color: rgba(0, 0, 0, 0.4);
       margin-right: 0.5rem; }
-    .search-container .form__btn {
+    .search-container .form__btn--orange {
       background-color: var(--btn-color);
       border: none;
       color: #fff;
       cursor: pointer;
       transition: all 200ms; }
-      .search-container .form__btn:hover {
+      .search-container .form__btn--orange:hover {
         background-color: #d88a04; }
-      .search-container .form__btn i {
+      .search-container .form__btn--orange i {
         transform: scaleX(-1); }
 
 .photo-content {
@@ -148,7 +148,7 @@ img {
   font-weight: 900;
   margin-left: 5px; }
 
-.bar {
+.bar--blue {
   background-color: var(--bar-color); }
 
 .main__footer {
