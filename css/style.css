@@ -10,8 +10,9 @@ html, body {
   height: 100%; }
 
 body {
+  background-color: var(--box-color);
   font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
-  margin: 0; }
+  margin: 1rem 0; }
 
 a {
   color: var(--base-color);
@@ -21,7 +22,6 @@ img {
   width: 100%; }
 
 .wrapper {
-  background-color: #fff;
   padding: 2rem; }
 
 .main__header {
@@ -97,7 +97,8 @@ img {
       background-color: var(--btn-color);
       border: none;
       color: #fff;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all 200ms; }
       .search-container .form__btn:hover {
         background-color: #d88a04; }
       .search-container .form__btn i {
@@ -155,7 +156,7 @@ img {
   font-size: 0.8125rem;
   line-height: 1.5;
   text-align: center;
-  margin: 2rem 0;
+  margin: 1rem 0;
   padding: 0 1rem; }
   .main__footer a {
     color: #504f4f;
@@ -167,7 +168,6 @@ img {
 
 @media (min-width: 60rem) {
   .wrapper {
-    background-color: var(--box-color);
     max-width: 980px;
     margin: 0 auto;
     padding: 5rem;
