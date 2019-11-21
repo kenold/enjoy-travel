@@ -137,7 +137,6 @@ $gap: 50px;
 .tour {
     &__item {
         background-color: #fff;
-        border: 1px solid var(--light-color);
         margin-bottom: 1rem;
     }
     &__link {
@@ -261,8 +260,6 @@ $gap: 50px;
         }
     }
     .tour__list {
-        background-color: #fff;
-        border: 1px solid var(--light-color);
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column: 2 / 6;
@@ -276,14 +273,9 @@ $gap: 50px;
             border-right: none;
             margin-bottom: 0;
             transition: all 200ms;
-            &:not(:last-child) {
-                border-right: 1px solid var(--light-color);
-                box-shadow: 2px 1px 8px 1px rgba(0,0,0,0.10);
-                transition: all 200ms;
-            }
+            border: 1px solid var(--light-color);
+            box-shadow: inset -5px 0 5px -5px rgba(0,0,0,0.09);
             &:hover {
-                border: 1px solid var(--light-color);
-                box-shadow: none;
                 transform: scale(1.05);
             }
         }

@@ -113,7 +113,6 @@ img {
 
 .tour__item {
   background-color: #fff;
-  border: 1px solid var(--light-color);
   margin-bottom: 1rem; }
 
 .tour__link {
@@ -216,8 +215,6 @@ img {
       font-weight: 900;
       margin-right: 3px; }
   .tour__list {
-    background-color: #fff;
-    border: 1px solid var(--light-color);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column: 2 / 6;
@@ -228,14 +225,10 @@ img {
     border-left: none;
     border-right: none;
     margin-bottom: 0;
-    transition: all 200ms; }
-    .tour__item:not(:last-child) {
-      border-right: 1px solid var(--light-color);
-      box-shadow: 2px 1px 8px 1px rgba(0, 0, 0, 0.1);
-      transition: all 200ms; }
+    transition: all 200ms;
+    border: 1px solid var(--light-color);
+    box-shadow: inset -5px 0 5px -5px rgba(0, 0, 0, 0.09); }
     .tour__item:hover {
-      border: 1px solid var(--light-color);
-      box-shadow: none;
       transform: scale(1.05); }
   .tour__title {
     width: 80%; }
