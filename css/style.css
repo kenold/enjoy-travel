@@ -96,6 +96,8 @@ img {
       border: none;
       color: #fff;
       cursor: pointer; }
+      .search-container .form__btn:hover {
+        background-color: #d88a04; }
       .search-container .form__btn i {
         transform: scaleX(-1); }
 
