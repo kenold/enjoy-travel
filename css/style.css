@@ -42,12 +42,18 @@ img {
   color: #000;
   display: block;
   font-size: 0.8125rem;
-  margin: .5rem 0 .5rem 1rem;
-  padding-bottom: .5rem;
-  text-decoration: none; }
-  .main-nav__item a:hover {
+  margin: .5rem 0 .5rem 1rem; }
+  .main-nav__item a::after {
+    display: block;
+    content: "";
+    border-bottom: 2px solid var(--btn-color);
+    padding-bottom: .375rem;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%; }
+  .main-nav__item a:hover::after {
     color: #444;
-    border-bottom: 2px solid var(--btn-color); }
+    transform: scaleX(1); }
 
 .main-left {
   background-color: #fff; }
