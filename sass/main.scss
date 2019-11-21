@@ -178,6 +178,19 @@ $gap: 50px;
 .bar {
     background-color: var(--bar-color);
 }
+.main__footer {
+    color: #444;
+    @include font-size(13);
+    text-align: center;
+    margin-top: 3rem;
+    a {
+        color: rgb(80, 79, 79);
+        text-decoration: underline;
+        &:hover {
+            color: #000;
+        }
+    }
+}
 
 @media (min-width: 60rem) {
     .wrapper {

@@ -150,6 +150,17 @@ img {
 .bar {
   background-color: var(--bar-color); }
 
+.main__footer {
+  color: #444;
+  font-size: 0.8125rem;
+  text-align: center;
+  margin-top: 3rem; }
+  .main__footer a {
+    color: #504f4f;
+    text-decoration: underline; }
+    .main__footer a:hover {
+      color: #000; }
+
 @media (min-width: 60rem) {
   .wrapper {
     background-color: var(--box-color);
