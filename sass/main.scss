@@ -23,6 +23,7 @@ body {
     background-color: #fff;
     font-family: $ss-font;
     margin: 1rem 0;
+    overflow-x: hidden;
 }
 a {
     color: var(--base-color);

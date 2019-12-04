@@ -12,7 +12,8 @@ html, body {
 body {
   background-color: #fff;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
-  margin: 1rem 0; }
+  margin: 1rem 0;
+  overflow-x: hidden; }
 
 a {
   color: var(--base-color);
@@ -39,7 +40,7 @@ img {
   height: 100vh;
   right: -35rem;
   padding: 6rem 2rem 2rem 2rem;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 10rem;
   z-index: 1; }
