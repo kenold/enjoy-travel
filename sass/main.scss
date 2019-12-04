@@ -12,6 +12,8 @@
 }
 
 $ss-font: 'Inter', -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$side-gap: 60px;
+$gap: 50px;
 
 html, body {
     height: 100%;
@@ -29,46 +31,20 @@ a {
 img {
   width: 100%;
 }
+.fixedPosition {
+    overflow: hidden;
+}
 .wrapper {
     padding: 0 2rem;
 }
-$side-gap: 60px;
-$gap: 50px;
 
 .main__header {
     display: flex;
     justify-content: space-between;
     padding: 1rem 0;
 }
-.main-nav {
-    display: none;
-    &__list {
-        display: flex;
-        justify-content: flex-end;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-}
-.main-nav__item a {
-    color: #000;
-    display: block;
-    @include font-size(13);
-    margin: .5rem 0 .5rem 1rem;
-    &::after {
-        display: block;
-        content: "";
-        border-bottom: 2px solid var(--btn-color);
-        padding-bottom: .375rem;
-        transform: scaleX(0);
-        transition: transform 250ms ease-in-out;
-        transform-origin: 0% 50%;
-    }
-    &:hover::after {
-        color: #444;
-        transform: scaleX(1);
-    }
-}
+@import "nav";
+
 .main-left {
     background-color: #fff;
 }
@@ -76,10 +52,14 @@ $gap: 50px;
     background: url("../images/jump.jpg") center no-repeat;
 }
 .slogan {
+    color: #fff;
+    background: var(--bar-color);
     font-size: 2.125rem;
     font-weight: bold;
     line-height: 1.2;
-    max-width: 80%;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding: 2rem;
 }
 .search-container {
     padding: 2rem 0;
@@ -229,12 +209,11 @@ $gap: 50px;
         padding: 2rem 0;
         z-index: 1;
     }
-    .main-nav {
-        display: block;
-    }
     .slogan {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
+        color: var(--base-color);
+        background-color: #fff;
         z-index: 1;
     }
     .search-container {
