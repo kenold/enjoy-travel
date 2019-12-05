@@ -151,7 +151,7 @@ img {
   line-height: 1.2;
   margin-left: -2rem;
   margin-right: -2rem;
-  padding: 2rem; }
+  padding: 2rem 8rem 2rem 2rem; }
 
 .search-container {
   padding: 2rem 0; }
@@ -209,14 +209,13 @@ img {
   padding: 1.5rem 2rem 1.5rem; }
 
 .tour__title {
-  font-size: 0.8125rem;
   line-height: 1.5;
-  margin-bottom: .75rem; }
+  margin-bottom: .5rem; }
 
 .tour__excerpt {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.8);
   flex-grow: auto;
-  font-size: 0.75rem;
+  font-size: 0.9375rem;
   line-height: 1.5;
   margin-bottom: 1rem; }
 
@@ -280,6 +279,7 @@ img {
     grid-row: 2 / 3;
     color: var(--base-color);
     background-color: #fff;
+    padding: 2rem;
     z-index: 1; }
   .search-container {
     grid-column: 2 / 3;
@@ -320,7 +320,11 @@ img {
     .tour__item:hover {
       transform: scale(1.05); }
   .tour__title {
+    font-size: 0.8125rem;
     width: 80%; }
+  .tour__excerpt {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.75rem; }
   .bar {
     grid-column: 1 / 4;
     grid-row: 5 / 7; } }

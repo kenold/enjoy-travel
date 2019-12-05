@@ -60,7 +60,7 @@ img {
     line-height: 1.2;
     margin-left: -2rem;
     margin-right: -2rem;
-    padding: 2rem;
+    padding: 2rem 8rem 2rem 2rem;
 }
 .search-container {
     padding: 2rem 0;
@@ -128,14 +128,13 @@ img {
         padding: 1.5rem 2rem 1.5rem;
     }
     &__title {
-        @include font-size(13);
         line-height: 1.5;
-        margin-bottom: .75rem;
+        margin-bottom: .5rem;
     }
     &__excerpt {
-        color: rgba(0, 0, 0, .6);
+        color: rgba(0, 0, 0, .8);
         flex-grow: auto;
-        @include font-size(12);
+        @include font-size(15);
         line-height: 1.5;
         margin-bottom: 1rem;
     }
@@ -215,6 +214,7 @@ img {
         grid-row: 2 / 3;
         color: var(--base-color);
         background-color: #fff;
+        padding: 2rem;
         z-index: 1;
     }
     .search-container {
@@ -267,7 +267,12 @@ img {
             }
         }
         &__title {
+            @include font-size(13);
             width: 80%;
+        }
+        &__excerpt {
+        color: rgba(0, 0, 0, 0.6);
+        @include font-size(12);
         }
     }
     .bar {
