@@ -96,7 +96,7 @@
             color: #000;
             @include font-size(13);
             display: block;
-            padding: 0 1rem 0 0;
+            padding: 0 0 0 1rem;
             &::after {
                 display: block;
                 content: "";
