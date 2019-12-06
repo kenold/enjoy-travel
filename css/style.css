@@ -312,7 +312,8 @@ img {
     padding: 0; }
   .photo-content {
     grid-column: 4 / 7;
-    grid-row: 1 / 7; }
+    grid-row: 1 / 7;
+    margin-bottom: 0; }
   .photo figcaption {
     align-self: center;
     padding-right: var(--side-gap); }
