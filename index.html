@@ -10,11 +10,12 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<!-- TODO: Accessibility -->
+	<!-- TODO:
+		- flexbox fallback
+		- accessibility
+	-->
 	<div class="wrapper">
 		<div class="grid">
-			<div class="main-left"></div>
-			<div class="main-right"></div>
 			<header class="main__header">
 				<div class="logo">
 					<a href="#">
@@ -34,31 +35,38 @@
 					<div class="nav-toggle-bar"></div>
 				</div>
 			</header>
-			<h1 class="slogan">Your next adventure starts now.</h1>
-			<div class="search-container">
-				<form class="form">
-					<div class="form__group form__group--location">
-						<div class="form__icon"><i class="fas fa-map-marker-alt"></i></div>
-						<input type="text" name="location" class="form__location" placeholder="Where do you want to go?">
-					</div>
-					<div class="form__group form__group--depart">
-						<div class="form__icon"><i class="far fa-calendar-alt"></i></div>
-						<!-- TODO: use JS for datepicker -->
-						<input type="text" name="depart" class="form__depart" placeholder="Depart">
-					</div>
-					<div class="form__group form__group--return">
-						<div class="form__icon"><i class="far fa-calendar-alt"></i></div>
-						<!-- TODO: use JS for datepicker -->
-						<input type="text" name="return" class="form__return" placeholder="Return">
-					</div>
-					<button type="submit" class="form__btn form__btn--orange"><i class="fas fa-search"></i></button>
-				</form>
-			</div>
+			<main class="main-content">
+				<h1 class="slogan">Your next adventure starts now.</h1>
+				<div class="search-container">
+					<form class="form">
+						<div class="form__group form__group--location">
+							<div class="form__icon"><i class="fas fa-map-marker-alt"></i></div>
+							<input type="text" name="location" class="form__location" placeholder="Where do you want to go?">
+						</div>
+						<div class="form__group form__group--depart">
+							<div class="form__icon"><i class="far fa-calendar-alt"></i></div>
+							<!-- TODO: use JS for datepicker -->
+							<input type="text" name="depart" class="form__depart" placeholder="Depart">
+						</div>
+						<div class="form__group form__group--return">
+							<div class="form__icon"><i class="far fa-calendar-alt"></i></div>
+							<!-- TODO: use JS for datepicker -->
+							<input type="text" name="return" class="form__return" placeholder="Return">
+						</div>
+						<button type="submit" class="form__btn form__btn--orange"><i class="fas fa-search"></i></button>
+					</form>
+				</div>
+			</main>
 
-			<div class="photo-content">
-				<div class="photo__caption">Kahekili's Leap</div>
-				<div class="photo__location">Hawaii</div>
-			</div>
+			<aside class="photo-content">
+				<figure class="photo">
+					<img class="photo__img" src="images/jump.jpg" alt="Kahekili's Leap, Hawaii" />
+					<div class="photo-caption">
+						<div class="caption__title">Kahekili's Leap</div>
+						<div class="caption__location">Hawaii</div>
+					</div>
+				</figure>
+			</aside>
 
 			<div class="tour__list">
 				<div class="tour__item">
@@ -89,15 +97,14 @@
 					</a>
 				</div>
 			</div> <!-- /.tour__list -->
-
 			<div class="bar bar--blue"></div>
-
 		</div> <!-- /.grid -->
 	</div>
 	<footer class="main__footer">
-		<span>Created by Kenold Beauplan <a href="https://twitter.com/kenoldb" target="_blank">@kenoldb</a> | <a href="https://github.com/kenold/enjoy-travel" target="_blank">Github</a></span> &#183;
+		Credits
+		<!-- <span>Created by Kenold Beauplan <a href="https://twitter.com/kenoldb" target="_blank">@kenoldb</a> | <a href="https://github.com/kenold/enjoy-travel" target="_blank">Github</a></span> &#183;
 		<span>UI inspired by Victor Berbel's Dribbble shot <a href="https://dribbble.com/shots/4517158-Enjoy-Travel" target="_blank">Enjoy Travel</a></span> &#183;
-		<span>Jump photo by <a href="https://unsplash.com/photos/jB8WaHvHmoY" target="_blank">Austin Neill</a></span>
+		<span>Jump photo by <a href="https://unsplash.com/photos/jB8WaHvHmoY" target="_blank">Austin Neill</a></span> -->
 	</footer>
 	<script src="js/app.js"></script>
 </body>
