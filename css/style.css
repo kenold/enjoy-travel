@@ -318,9 +318,6 @@ img {
     align-self: center;
     padding-right: var(--side-gap); }
   .photo img {
-    width: 100%;
-    height: 100%;
-    display: block;
     object-fit: cover; }
   .tour__list {
     display: grid;
